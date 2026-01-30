@@ -51,4 +51,6 @@ services:
       - backend
 
 volumes:
-  postgres_data:
+  postgres-data:
+    driver: local
+
