@@ -6,7 +6,7 @@ const pool = new Pool({
     port: process.env.DB_PORT || 5432,
     user: process.env.DB_USER || 'libuser',
     password: process.env.DB_PASSWORD || 'libpass123',
-    database: process.env.DB_NAME || 'online_library',
+    database: process.env.DB_NAME || 'onlinelibrary',
 });
 
 pool.on('error', (err) => {
