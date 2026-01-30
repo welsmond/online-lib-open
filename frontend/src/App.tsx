@@ -1,8 +1,9 @@
-export default function App() {
-  return (
-    <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h1>📚 Online Library</h1>
-      <p>Frontend is loading...</p>
-    </div>
-  );
+import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/Router';
+
+function App() {
+  return <RouterProvider router={router} />;
 }
+
+export default App;

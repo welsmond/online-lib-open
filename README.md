@@ -1,41 +1,26 @@
-# 📚 Online Library - Audiobooks Platform
+# Online Library Backend
 
-Full-stack audiobook library with React frontend and Node.js backend.
+Node.js + Express API for Online Library audiobook system.
 
-## 🚀 Quick Start
+## Setup
 
-```bash
-docker-compose up -d
-Frontend: http://localhost:3000
+### Install dependencies
+\`\`\`bash
+cd backend
+npm install
+\`\`\`
 
-Backend API: http://localhost:5000/api
+### Environment variables
+Copy `.env.example` to `.env`
 
-Database: localhost:5432
+### Database
+PostgreSQL is running in Docker
 
-Features
-✅ JWT Authentication
-✅ Audiobook Catalog
-✅ Search & Filter
-✅ User Library
-✅ Audio Player
-✅ Rating & Reviews
+### Start server
+\`\`\`bash
+# Development
+npm run dev
 
-Tech Stack
-Backend: Node.js, Express, PostgreSQL
-
-Frontend: React, TypeScript, Material-UI
-
-DevOps: Docker, GitHub Actions
-
-API Endpoints
-text
-POST   /api/auth/register
-POST   /api/auth/login
-POST   /api/auth/refresh
-GET    /api/books
-GET    /api/books/:id
-GET    /api/library/my
-POST   /api/library/add/:id
-DELETE /api/library/:id
-License
-MIT
+# Production
+npm start
+\`\`\`
