@@ -8,7 +8,9 @@ services:
       POSTGRES_PASSWORD: libpass123
       POSTGRES_DB: online_library
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
+      - ./backend/src/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./backend/src/database/init.sql:/docker-entrypoint-initdb.d/02-init.sql
     ports:
       - "5432:5432"
     healthcheck:
