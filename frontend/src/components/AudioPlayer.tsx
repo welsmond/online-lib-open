@@ -6,7 +6,8 @@ import {
   Typography,
   Slider,
   IconButton,
-  VolumeUp,
+import VolumeUp from '@mui/icons-material/VolumeUp';
+  
   Stack,
 } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
