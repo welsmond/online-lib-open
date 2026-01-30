@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.local
+.DS_Store
+dist/
+build/
+uploads/
+*.log
+.idea/
+.vscode/
+
+# Windows special files
+NUL
+CON
+PRN
+AUX
+COM*
+LPT*
