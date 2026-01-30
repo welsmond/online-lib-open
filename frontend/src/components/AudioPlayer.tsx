@@ -6,10 +6,9 @@ import {
   Typography,
   Slider,
   IconButton,
-import VolumeUp from '@mui/icons-material/VolumeUp';
-  
   Stack,
 } from '@mui/material';
+import VolumeUp from '@mui/icons-material/VolumeUp';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
@@ -20,6 +19,7 @@ interface AudioPlayerProps {
   src: string;
   title: string;
 }
+
 
 export function CustomAudioPlayer({ src, title }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
